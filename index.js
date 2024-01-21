@@ -1,4 +1,4 @@
-let = Vitorias = 120
+let = Vitorias = 26git push -u origin main
 let = Derrotas = 12
 
 function somar(Vitorias, Derrotas) {return Vitorias - Derrotas;}
