@@ -1,14 +1,15 @@
-let NomeHeroi = "Gustavo"
-let XPHeroi = 5221
-let nivel = ""
+let = Vitorias = 120
+let = Derrotas = 12
 
-if (XPHeroi <= 1000) {nivel = "Ferro"}
-else if (XPHeroi <= 2000) {nivel = "Bronze"}
-else if (XPHeroi <= 5000) {nivel = "Prata"}
-else if (XPHeroi <= 7000) {nivel = "Ouro"}
-else if (XPHeroi <= 8000) {nivel = "Platina"}
-else if (XPHeroi <= 9000) {nivel = "Ascendente"}
-else if (XPHeroi <= 10000) {nivel = "Imortal"}
-else if (XPHeroi >= 10001) {nivel = "Radiante"}
+function somar(Vitorias, Derrotas) {return Vitorias - Derrotas;}
+let = Saldo = somar(Vitorias, Derrotas);
 
-console.log ("O Herói de nome" + NomeHeroi + " está no nível de " + nivel)
+if (Saldo < 10) {nivel = "Ferro"}
+else if (Saldo<= 20) {nivel = "Bronze"}
+else if (Saldo <= 50) {nivel = "Prata"}
+else if (Saldo <= 80) {nivel = "Ouro"}
+else if (Saldo <= 90) {nivel = "Diamante"}
+else if (Saldo <= 100) {nivel = "Lendário"}
+else if (Saldo >= 101) {nivel = "Imortal"}
+
+console.log ("O herói possui um saldo de " + Saldo + " está no nível de " + nivel)
